@@ -1,6 +1,6 @@
 # CLIP Feature Analysis
 
-This project analyzes the features extracted from different layers of a CLIP model, focusing on domain generalization aspects.
+This project analyzes features extracted from different layers of a CLIP model, focusing on domain generalization.
 
 ## Project Structure
 
@@ -28,7 +28,7 @@ clip_odg/
 │   └── officehome/        # Plots for Office-Home dataset (organized by dataset)
 ├── results/
 │   └── officehome/        # Results for Office-Home dataset (organized by dataset)
-└── logs/                # Log files
+└── logs/                  # Log files
 ```
 
 ## Setup
@@ -100,26 +100,26 @@ The script generates t-SNE visualizations in the specified visualization directo
 
 ## Datasets
 
-Este proyecto utiliza los siguientes datasets para experimentos de generalización de dominio:
+This project uses the following datasets for domain generalization experiments:
 
 - **OfficeHome**
 - **Terra Incognita**
 
-Ambos datasets fueron descargados desde el repositorio [DomainBed](https://github.com/facebookresearch/DomainBed) y no se incluyen en este repositorio debido a su tamaño.
+Both datasets were downloaded from the [DomainBed repository](https://github.com/facebookresearch/DomainBed). These datasets are not included in this repository because they are very large.
 
-**Nota:**
-- Los archivos y carpetas de datos (`data/officehome/`, `data/terra_incognita/`, `OfficeHome.zip`, etc.) están listados en el `.gitignore` y no se suben al repositorio.
-- La estructura esperada es:
+**Note:**
+- Data files and folders (`data/officehome/`, `data/terra_incognita/`, `OfficeHome.zip`, etc.) are listed in the `.gitignore` file and are not uploaded to the repository.
+- The expected folder structure is:
   ```
   data/
     officehome/
-      <domain>/<clase>/<imagen>
+      <domain>/<class>/<image>
     terra_incognita/
-      <domain>/<clase>/<imagen>
+      <domain>/<class>/<image>
   ```
 
-Para obtener los datos, sigue las instrucciones de descarga de [DomainBed](https://github.com/facebookresearch/DomainBed#download-datasets) y colócalos en la carpeta `data/` siguiendo la estructura anterior.
+To get the datasets, please follow the download instructions from [DomainBed](https://github.com/facebookresearch/DomainBed#download-datasets) and place them in the `data/` folder using the structure above.
 
-## Notas adicionales
-- Los archivos de características, visualizaciones y modelos generados también están excluidos del repositorio.
-- Consulta el `.gitignore` para ver todos los patrones excluidos. 
+## Additional Notes
+- Feature files, visualizations, and generated model files are also excluded from the repository.
+- See the `.gitignore` file for all excluded patterns. 

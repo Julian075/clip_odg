@@ -1,13 +1,13 @@
-# Datos y archivos pesados
+# Large data files and datasets
 /data/OfficeHome.zip
 /data/features/
 /data/officehome/*
 /data/terra_incognita/*
 
-# Visualizaciones y salidas
+# Visualization outputs and generated images
 /visualizations/
 
-# Archivos de modelos y checkpoints
+# Model files and checkpoints
 *.pt
 *.pth
 *.ckpt
@@ -16,25 +16,25 @@
 *.h5
 *.onnx
 
-# Archivos comprimidos
+# Compressed files
 *.zip
 *.tar
 *.tar.gz
 
-# Imágenes
+# Image files
 *.jpg
 *.jpeg
 *.png
 *.bmp
 *.gif
 
-# Python cache y temporales
+# Python cache and temporary files
 __pycache__/
 *.pyc
 .DS_Store
 *.swp
 *.swo
 
-# Otros archivos temporales
+# Other temporary files
 *.tmp
 *.log 
