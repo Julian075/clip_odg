@@ -1,0 +1,22 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Analyze Latent Features",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/analyze_latent_features.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "python": "/home/ids/jpabon/miniconda3/envs/clip_odg/bin/python"
+        }
+    ]
+}

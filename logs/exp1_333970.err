@@ -1,0 +1,67 @@
+/var/spool/slurmd/job333970/slurm_script: line 25: /home/ids/jpabon/anaconda3/etc/profile.d/conda.sh: No such file or directory
+
+CondaError: Run 'conda init' before 'conda activate'
+
+
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.2.5 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+Traceback (most recent call last):  File "/home/ids/jpabon/projects/clip_odg/main.py", line 2, in <module>
+    import torch
+  File "/home/ids/jpabon/miniconda3/envs/clip_odg/lib/python3.10/site-packages/torch/__init__.py", line 1382, in <module>
+    from .functional import *  # noqa: F403
+  File "/home/ids/jpabon/miniconda3/envs/clip_odg/lib/python3.10/site-packages/torch/functional.py", line 7, in <module>
+    import torch.nn.functional as F
+  File "/home/ids/jpabon/miniconda3/envs/clip_odg/lib/python3.10/site-packages/torch/nn/__init__.py", line 1, in <module>
+    from .modules import *  # noqa: F403
+  File "/home/ids/jpabon/miniconda3/envs/clip_odg/lib/python3.10/site-packages/torch/nn/modules/__init__.py", line 35, in <module>
+    from .transformer import TransformerEncoder, TransformerDecoder, \
+  File "/home/ids/jpabon/miniconda3/envs/clip_odg/lib/python3.10/site-packages/torch/nn/modules/transformer.py", line 20, in <module>
+    device: torch.device = torch.device(torch._C._get_default_device()),  # torch.device('cpu'),
+/home/ids/jpabon/miniconda3/envs/clip_odg/lib/python3.10/site-packages/torch/nn/modules/transformer.py:20: UserWarning: Failed to initialize NumPy: _ARRAY_API not found (Triggered internally at /opt/conda/conda-bld/pytorch_1695392020201/work/torch/csrc/utils/tensor_numpy.cpp:84.)
+  device: torch.device = torch.device(torch._C._get_default_device()),  # torch.device('cpu'),
+/home/ids/jpabon/miniconda3/envs/clip_odg/lib/python3.10/site-packages/requests/__init__.py:86: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+Evaluating:   0%|          | 0/76 [00:00<?, ?it/s]Evaluating:   0%|          | 0/76 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/ids/jpabon/projects/clip_odg/main.py", line 165, in <module>
+    main() 
+  File "/home/ids/jpabon/projects/clip_odg/main.py", line 134, in main
+    metrics = evaluate_model(model, dataloader, args.device)
+  File "/home/ids/jpabon/projects/clip_odg/main.py", line 53, in evaluate_model
+    for images, labels in tqdm(dataloader, desc="Evaluating"):
+  File "/home/ids/jpabon/.local/lib/python3.10/site-packages/tqdm/std.py", line 1181, in __iter__
+    for obj in iterable:
+  File "/home/ids/jpabon/miniconda3/envs/clip_odg/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+    data = self._next_data()
+  File "/home/ids/jpabon/miniconda3/envs/clip_odg/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1345, in _next_data
+    return self._process_data(data)
+  File "/home/ids/jpabon/miniconda3/envs/clip_odg/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1371, in _process_data
+    data.reraise()
+  File "/home/ids/jpabon/miniconda3/envs/clip_odg/lib/python3.10/site-packages/torch/_utils.py", line 694, in reraise
+    raise exception
+RuntimeError: Caught RuntimeError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/ids/jpabon/miniconda3/envs/clip_odg/lib/python3.10/site-packages/torch/utils/data/_utils/worker.py", line 308, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/home/ids/jpabon/miniconda3/envs/clip_odg/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/ids/jpabon/miniconda3/envs/clip_odg/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/ids/jpabon/projects/clip_odg/utils/dataset.py", line 40, in __getitem__
+    image = self.transform(image)
+  File "/home/ids/jpabon/miniconda3/envs/clip_odg/lib/python3.10/site-packages/torchvision/transforms/transforms.py", line 95, in __call__
+    img = t(img)
+  File "/home/ids/jpabon/miniconda3/envs/clip_odg/lib/python3.10/site-packages/torchvision/transforms/transforms.py", line 137, in __call__
+    return F.to_tensor(pic)
+  File "/home/ids/jpabon/miniconda3/envs/clip_odg/lib/python3.10/site-packages/torchvision/transforms/functional.py", line 166, in to_tensor
+    img = torch.from_numpy(np.array(pic, mode_to_nptype.get(pic.mode, np.uint8), copy=True))
+RuntimeError: Numpy is not available
+
+srun: error: nodemm06: task 0: Exited with exit code 1

@@ -1,0 +1,32 @@
+Starting job on node: nodemm05.enst.fr
+Job started at: mar. 13 mai 2025 18:01:18 CEST
+Evaluating on Art domain...
+/home/ids/jpabon/miniconda3/envs/clip_odg/lib/python3.10/site-packages/requests/__init__.py:86: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/ids/jpabon/projects/clip_odg/main.py", line 12, in <module>
+    from utils.dataset import get_dataset, OfficeHomeDataset
+ImportError: cannot import name 'OfficeHomeDataset' from 'utils.dataset' (/home/ids/jpabon/projects/clip_odg/utils/dataset.py)
+Evaluating on Clipart domain...
+/home/ids/jpabon/miniconda3/envs/clip_odg/lib/python3.10/site-packages/requests/__init__.py:86: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/ids/jpabon/projects/clip_odg/main.py", line 12, in <module>
+    from utils.dataset import get_dataset, OfficeHomeDataset
+ImportError: cannot import name 'OfficeHomeDataset' from 'utils.dataset' (/home/ids/jpabon/projects/clip_odg/utils/dataset.py)
+Evaluating on Product domain...
+/home/ids/jpabon/miniconda3/envs/clip_odg/lib/python3.10/site-packages/requests/__init__.py:86: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/ids/jpabon/projects/clip_odg/main.py", line 12, in <module>
+    from utils.dataset import get_dataset, OfficeHomeDataset
+ImportError: cannot import name 'OfficeHomeDataset' from 'utils.dataset' (/home/ids/jpabon/projects/clip_odg/utils/dataset.py)
+Evaluating on RealWorld domain...
+/home/ids/jpabon/miniconda3/envs/clip_odg/lib/python3.10/site-packages/requests/__init__.py:86: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/ids/jpabon/projects/clip_odg/main.py", line 12, in <module>
+    from utils.dataset import get_dataset, OfficeHomeDataset
+ImportError: cannot import name 'OfficeHomeDataset' from 'utils.dataset' (/home/ids/jpabon/projects/clip_odg/utils/dataset.py)
+Evaluation complete. Check logs directory for results and results directory for detailed metrics.
+Job finished at: mar. 13 mai 2025 18:01:38 CEST

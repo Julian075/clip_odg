@@ -1,0 +1,17 @@
+/var/spool/slurmd/job334049/slurm_script: line 25: /home/ids/jpabon/anaconda3/etc/profile.d/conda.sh: No such file or directory
+
+CondaError: Run 'conda init' before 'conda activate'
+
+/home/ids/jpabon/miniconda3/envs/clip_odg/lib/python3.10/site-packages/requests/__init__.py:86: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/ids/jpabon/projects/clip_odg/main.py", line 165, in <module>
+    main() 
+  File "/home/ids/jpabon/projects/clip_odg/main.py", line 107, in main
+    model = PrunedCLIP(
+  File "/home/ids/jpabon/projects/clip_odg/models/pruned_clip.py", line 39, in __init__
+    self._prune_vision_layers(prune_vision_layers)
+  File "/home/ids/jpabon/projects/clip_odg/models/pruned_clip.py", line 98, in _prune_vision_layers
+    if max(prune_layers) >= self.num_vision_layers:
+ValueError: max() arg is an empty sequence
+srun: error: nodemm05: task 0: Exited with exit code 1

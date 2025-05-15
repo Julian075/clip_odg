@@ -1,0 +1,40 @@
+# Datos y archivos pesados
+/data/OfficeHome.zip
+/data/features/
+/data/officehome/*
+/data/terra_incognita/*
+
+# Visualizaciones y salidas
+/visualizations/
+
+# Archivos de modelos y checkpoints
+*.pt
+*.pth
+*.ckpt
+*.npz
+*.npy
+*.h5
+*.onnx
+
+# Archivos comprimidos
+*.zip
+*.tar
+*.tar.gz
+
+# Imágenes
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.gif
+
+# Python cache y temporales
+__pycache__/
+*.pyc
+.DS_Store
+*.swp
+*.swo
+
+# Otros archivos temporales
+*.tmp
+*.log 

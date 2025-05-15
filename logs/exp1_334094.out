@@ -1,0 +1,41 @@
+Starting job on node: nodemm05.enst.fr
+Job started at: mar. 13 mai 2025 18:41:01 CEST
+Evaluating original model...
+
+Evaluating original model on art domain...
+Accuracy: 0.8026
+F1 Score: 0.8040
+
+Evaluating original model on real_world domain...
+Accuracy: 0.8910
+F1 Score: 0.8905
+
+Evaluating original model on clipart domain...
+Accuracy: 0.6944
+F1 Score: 0.6954
+
+Evaluating original model on product domain...
+Accuracy: 0.8795
+F1 Score: 0.8781
+
+Original model results saved to results/original_model_results.json
+Pruning 1 layers (10.0%)
+
+Evaluating on art domain...
+Accuracy: 0.2208
+F1 Score: 0.2367
+
+Evaluating on real_world domain...
+Accuracy: 0.2756
+F1 Score: 0.2782
+
+Evaluating on clipart domain...
+Accuracy: 0.1533
+F1 Score: 0.1302
+
+Evaluating on product domain...
+Accuracy: 0.2273
+F1 Score: 0.2127
+
+Results saved to results/clip_odg_exp1/results.json
+Job finished at: mar. 13 mai 2025 18:43:35 CEST

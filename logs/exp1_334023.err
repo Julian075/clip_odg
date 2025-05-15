@@ -1,0 +1,40 @@
+/var/spool/slurmd/job334023/slurm_script: line 25: /home/ids/jpabon/anaconda3/etc/profile.d/conda.sh: No such file or directory
+
+CondaError: Run 'conda init' before 'conda activate'
+
+/home/ids/jpabon/miniconda3/envs/clip_odg/lib/python3.10/site-packages/requests/__init__.py:86: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+Evaluating:   0%|          | 0/76 [00:00<?, ?it/s]Evaluating:   0%|          | 0/76 [00:02<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/ids/jpabon/projects/clip_odg/main.py", line 165, in <module>
+    main() 
+  File "/home/ids/jpabon/projects/clip_odg/main.py", line 134, in main
+    metrics = evaluate_model(model, dataloader, args.device)
+  File "/home/ids/jpabon/projects/clip_odg/main.py", line 58, in evaluate_model
+    image_features = model.get_image_features(images)
+  File "/home/ids/jpabon/projects/clip_odg/models/pruned_clip.py", line 180, in get_image_features
+    return self.clip_model.encode_image(pixel_values)
+  File "/home/ids/jpabon/.local/lib/python3.10/site-packages/clip/model.py", line 341, in encode_image
+    return self.visual(image.type(self.dtype))
+  File "/home/ids/jpabon/miniconda3/envs/clip_odg/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ids/jpabon/miniconda3/envs/clip_odg/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ids/jpabon/.local/lib/python3.10/site-packages/clip/model.py", line 232, in forward
+    x = self.transformer(x)
+  File "/home/ids/jpabon/miniconda3/envs/clip_odg/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ids/jpabon/miniconda3/envs/clip_odg/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ids/jpabon/.local/lib/python3.10/site-packages/clip/model.py", line 224, in forward
+    x = self.conv1(x)  # shape = [*, width, grid, grid]
+  File "/home/ids/jpabon/miniconda3/envs/clip_odg/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ids/jpabon/miniconda3/envs/clip_odg/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ids/jpabon/miniconda3/envs/clip_odg/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 460, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/home/ids/jpabon/miniconda3/envs/clip_odg/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 456, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+RuntimeError: Given groups=1, weight of size [768, 3, 16, 16], expected input[1, 197, 32, 768] to have 3 channels, but got 197 channels instead
+srun: error: nodemm05: task 0: Exited with exit code 1

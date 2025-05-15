@@ -1,0 +1,118 @@
+{
+  "results": {
+    "art": {
+      "accuracy": 0.8026370004120313,
+      "f1": 0.8040385970105925
+    },
+    "real_world": {
+      "accuracy": 0.890980032132201,
+      "f1": 0.8904646040574579
+    },
+    "clipart": {
+      "accuracy": 0.6943871706758304,
+      "f1": 0.6953652561966795
+    },
+    "product": {
+      "accuracy": 0.879477359765713,
+      "f1": 0.8781401826405364
+    }
+  },
+  "model_info": {
+    "model_name": "ViT-B/16",
+    "total_layers": 12,
+    "hidden_size": 768,
+    "kept_layers": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "pruned_layers": [],
+    "layer_structure": [
+      {
+        "layer_idx": 0,
+        "layer_type": "ResidualAttentionBlock",
+        "is_pruned": false,
+        "hidden_size": 768
+      },
+      {
+        "layer_idx": 1,
+        "layer_type": "ResidualAttentionBlock",
+        "is_pruned": false,
+        "hidden_size": 768
+      },
+      {
+        "layer_idx": 2,
+        "layer_type": "ResidualAttentionBlock",
+        "is_pruned": false,
+        "hidden_size": 768
+      },
+      {
+        "layer_idx": 3,
+        "layer_type": "ResidualAttentionBlock",
+        "is_pruned": false,
+        "hidden_size": 768
+      },
+      {
+        "layer_idx": 4,
+        "layer_type": "ResidualAttentionBlock",
+        "is_pruned": false,
+        "hidden_size": 768
+      },
+      {
+        "layer_idx": 5,
+        "layer_type": "ResidualAttentionBlock",
+        "is_pruned": false,
+        "hidden_size": 768
+      },
+      {
+        "layer_idx": 6,
+        "layer_type": "ResidualAttentionBlock",
+        "is_pruned": false,
+        "hidden_size": 768
+      },
+      {
+        "layer_idx": 7,
+        "layer_type": "ResidualAttentionBlock",
+        "is_pruned": false,
+        "hidden_size": 768
+      },
+      {
+        "layer_idx": 8,
+        "layer_type": "ResidualAttentionBlock",
+        "is_pruned": false,
+        "hidden_size": 768
+      },
+      {
+        "layer_idx": 9,
+        "layer_type": "ResidualAttentionBlock",
+        "is_pruned": false,
+        "hidden_size": 768
+      },
+      {
+        "layer_idx": 10,
+        "layer_type": "ResidualAttentionBlock",
+        "is_pruned": false,
+        "hidden_size": 768
+      },
+      {
+        "layer_idx": 11,
+        "layer_type": "ResidualAttentionBlock",
+        "is_pruned": false,
+        "hidden_size": 768
+      }
+    ]
+  },
+  "config": {
+    "model_name": "ViT-B/16",
+    "timestamp": "2025-05-13 18:42:20"
+  }
+}

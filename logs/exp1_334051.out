@@ -1,0 +1,22 @@
+Starting job on node: nodemm05.enst.fr
+Job started at: mar. 13 mai 2025 17:40:39 CEST
+Pruning 1 layers (10.0%)
+
+Evaluating on art domain...
+Accuracy: 0.1722
+F1 Score: 0.1886
+
+Evaluating on real_world domain...
+Accuracy: 0.2346
+F1 Score: 0.2583
+
+Evaluating on clipart domain...
+Accuracy: 0.1517
+F1 Score: 0.1238
+
+Evaluating on product domain...
+Accuracy: 0.1926
+F1 Score: 0.1906
+
+Results saved to results/clip_odg_exp1/results.json
+Job finished at: mar. 13 mai 2025 17:41:59 CEST

@@ -1,0 +1,139 @@
+{
+  "results": {
+    "art": {
+      "accuracy": 0.22084878450762258,
+      "f1": 0.2367058146727898
+    },
+    "real_world": {
+      "accuracy": 0.27564838191416113,
+      "f1": 0.2782001466373704
+    },
+    "clipart": {
+      "accuracy": 0.15326460481099657,
+      "f1": 0.13023116349935754
+    },
+    "product": {
+      "accuracy": 0.22730344672223474,
+      "f1": 0.2126553903101035
+    }
+  },
+  "model_info": {
+    "model_name": "ViT-B/16",
+    "total_layers": 11,
+    "hidden_size": 768,
+    "kept_layers": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "pruned_layers": [
+      11
+    ],
+    "layer_structure": [
+      {
+        "layer_idx": 0,
+        "layer_type": "ResidualAttentionBlock",
+        "is_pruned": false,
+        "hidden_size": 768
+      },
+      {
+        "layer_idx": 1,
+        "layer_type": "ResidualAttentionBlock",
+        "is_pruned": false,
+        "hidden_size": 768
+      },
+      {
+        "layer_idx": 2,
+        "layer_type": "ResidualAttentionBlock",
+        "is_pruned": false,
+        "hidden_size": 768
+      },
+      {
+        "layer_idx": 3,
+        "layer_type": "ResidualAttentionBlock",
+        "is_pruned": false,
+        "hidden_size": 768
+      },
+      {
+        "layer_idx": 4,
+        "layer_type": "ResidualAttentionBlock",
+        "is_pruned": false,
+        "hidden_size": 768
+      },
+      {
+        "layer_idx": 5,
+        "layer_type": "ResidualAttentionBlock",
+        "is_pruned": false,
+        "hidden_size": 768
+      },
+      {
+        "layer_idx": 6,
+        "layer_type": "ResidualAttentionBlock",
+        "is_pruned": false,
+        "hidden_size": 768
+      },
+      {
+        "layer_idx": 7,
+        "layer_type": "ResidualAttentionBlock",
+        "is_pruned": false,
+        "hidden_size": 768
+      },
+      {
+        "layer_idx": 8,
+        "layer_type": "ResidualAttentionBlock",
+        "is_pruned": false,
+        "hidden_size": 768
+      },
+      {
+        "layer_idx": 9,
+        "layer_type": "ResidualAttentionBlock",
+        "is_pruned": false,
+        "hidden_size": 768
+      },
+      {
+        "layer_idx": 10,
+        "layer_type": "ResidualAttentionBlock",
+        "is_pruned": false,
+        "hidden_size": 768
+      }
+    ]
+  },
+  "config": {
+    "data_dir": "./data/officehome",
+    "domain": null,
+    "model_name": "ViT-B/16",
+    "prune_percentage": 10.0,
+    "batch_size": 32,
+    "num_workers": 8,
+    "device": "cuda",
+    "output_dir": "results",
+    "experiment_name": "clip_odg_exp1",
+    "timestamp": "2025-05-13 18:41:07"
+  },
+  "original_model_results": {
+    "art": {
+      "accuracy": 0.8026370004120313,
+      "f1": 0.8040385970105925
+    },
+    "real_world": {
+      "accuracy": 0.890980032132201,
+      "f1": 0.8904646040574579
+    },
+    "clipart": {
+      "accuracy": 0.6943871706758304,
+      "f1": 0.6953652561966795
+    },
+    "product": {
+      "accuracy": 0.879477359765713,
+      "f1": 0.8781401826405364
+    }
+  }
+}

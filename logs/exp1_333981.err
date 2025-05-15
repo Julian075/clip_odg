@@ -1,0 +1,40 @@
+/var/spool/slurmd/job333981/slurm_script: line 25: /home/ids/jpabon/anaconda3/etc/profile.d/conda.sh: No such file or directory
+
+CondaError: Run 'conda init' before 'conda activate'
+
+/home/ids/jpabon/miniconda3/envs/clip_odg/lib/python3.10/site-packages/requests/__init__.py:86: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+
+Evaluating:   0%|          | 0/76 [00:00<?, ?it/s]
+Evaluating:   0%|          | 0/76 [00:01<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/ids/jpabon/projects/clip_odg/main.py", line 165, in <module>
+    main() 
+  File "/home/ids/jpabon/projects/clip_odg/main.py", line 134, in main
+    metrics = evaluate_model(model, dataloader, args.device)
+  File "/home/ids/jpabon/projects/clip_odg/main.py", line 58, in evaluate_model
+    image_features = model.get_image_features(images)
+  File "/home/ids/jpabon/projects/clip_odg/models/pruned_clip.py", line 141, in get_image_features
+    return self.clip_model.encode_image(pixel_values)
+  File "/home/ids/jpabon/.local/lib/python3.10/site-packages/clip/model.py", line 341, in encode_image
+    return self.visual(image.type(self.dtype))
+  File "/home/ids/jpabon/miniconda3/envs/clip_odg/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ids/jpabon/miniconda3/envs/clip_odg/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ids/jpabon/.local/lib/python3.10/site-packages/clip/model.py", line 232, in forward
+    x = self.transformer(x)
+  File "/home/ids/jpabon/miniconda3/envs/clip_odg/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ids/jpabon/miniconda3/envs/clip_odg/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ids/jpabon/.local/lib/python3.10/site-packages/clip/model.py", line 203, in forward
+    return self.resblocks(x)
+  File "/home/ids/jpabon/miniconda3/envs/clip_odg/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ids/jpabon/miniconda3/envs/clip_odg/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ids/jpabon/miniconda3/envs/clip_odg/lib/python3.10/site-packages/torch/nn/modules/module.py", line 372, in _forward_unimplemented
+    raise NotImplementedError(f"Module [{type(self).__name__}] is missing the required \"forward\" function")
+NotImplementedError: Module [ModuleList] is missing the required "forward" function
+srun: error: nodemm06: task 0: Exited with exit code 1

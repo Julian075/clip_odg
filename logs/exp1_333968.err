@@ -1,0 +1,39 @@
+/var/spool/slurmd/job333968/slurm_script: line 25: /home/ids/jpabon/anaconda3/etc/profile.d/conda.sh: No such file or directory
+
+CondaError: Run 'conda init' before 'conda activate'
+
+
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.2.5 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+Traceback (most recent call last):  File "/home/ids/jpabon/projects/clip_odg/main.py", line 2, in <module>
+    import torch
+  File "/home/ids/jpabon/miniconda3/envs/clip_odg/lib/python3.10/site-packages/torch/__init__.py", line 1382, in <module>
+    from .functional import *  # noqa: F403
+  File "/home/ids/jpabon/miniconda3/envs/clip_odg/lib/python3.10/site-packages/torch/functional.py", line 7, in <module>
+    import torch.nn.functional as F
+  File "/home/ids/jpabon/miniconda3/envs/clip_odg/lib/python3.10/site-packages/torch/nn/__init__.py", line 1, in <module>
+    from .modules import *  # noqa: F403
+  File "/home/ids/jpabon/miniconda3/envs/clip_odg/lib/python3.10/site-packages/torch/nn/modules/__init__.py", line 35, in <module>
+    from .transformer import TransformerEncoder, TransformerDecoder, \
+  File "/home/ids/jpabon/miniconda3/envs/clip_odg/lib/python3.10/site-packages/torch/nn/modules/transformer.py", line 20, in <module>
+    device: torch.device = torch.device(torch._C._get_default_device()),  # torch.device('cpu'),
+/home/ids/jpabon/miniconda3/envs/clip_odg/lib/python3.10/site-packages/torch/nn/modules/transformer.py:20: UserWarning: Failed to initialize NumPy: _ARRAY_API not found (Triggered internally at /opt/conda/conda-bld/pytorch_1695392020201/work/torch/csrc/utils/tensor_numpy.cpp:84.)
+  device: torch.device = torch.device(torch._C._get_default_device()),  # torch.device('cpu'),
+/home/ids/jpabon/miniconda3/envs/clip_odg/lib/python3.10/site-packages/requests/__init__.py:86: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/ids/jpabon/projects/clip_odg/main.py", line 165, in <module>
+    main() 
+  File "/home/ids/jpabon/projects/clip_odg/main.py", line 121, in main
+    datasets = get_dataset(args.data_dir, args.domain)
+  File "/home/ids/jpabon/projects/clip_odg/utils/dataset.py", line 66, in get_dataset
+    domains = [d for d in os.listdir(data_dir) if os.path.isdir(os.path.join(data_dir, d))]
+FileNotFoundError: [Errno 2] No such file or directory: '~/data/officehome'
+srun: error: nodemm06: task 0: Exited with exit code 1

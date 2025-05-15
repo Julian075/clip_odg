@@ -1,0 +1,12 @@
+{
+  "data_dir": "./data/officehome",
+  "domain": null,
+  "model_name": "ViT-B/16",
+  "prune_percentage": 10.0,
+  "batch_size": 32,
+  "num_workers": 8,
+  "device": "cuda",
+  "output_dir": "results",
+  "experiment_name": "clip_odg_exp1",
+  "timestamp": "2025-05-13 18:41:07"
+}

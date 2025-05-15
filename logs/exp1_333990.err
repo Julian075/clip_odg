@@ -1,0 +1,19 @@
+/var/spool/slurmd/job333990/slurm_script: line 25: /home/ids/jpabon/anaconda3/etc/profile.d/conda.sh: No such file or directory
+
+CondaError: Run 'conda init' before 'conda activate'
+
+/home/ids/jpabon/miniconda3/envs/clip_odg/lib/python3.10/site-packages/requests/__init__.py:86: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/ids/jpabon/projects/clip_odg/main.py", line 165, in <module>
+    main() 
+  File "/home/ids/jpabon/projects/clip_odg/main.py", line 107, in main
+    model = PrunedCLIP(
+  File "/home/ids/jpabon/projects/clip_odg/models/pruned_clip.py", line 39, in __init__
+    self._prune_vision_layers(prune_vision_layers)
+  File "/home/ids/jpabon/projects/clip_odg/models/pruned_clip.py", line 81, in _prune_vision_layers
+    input_resolution=original_transformer.input_resolution,
+  File "/home/ids/jpabon/miniconda3/envs/clip_odg/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1695, in __getattr__
+    raise AttributeError(f"'{type(self).__name__}' object has no attribute '{name}'")
+AttributeError: 'Transformer' object has no attribute 'input_resolution'
+srun: error: nodemm06: task 0: Exited with exit code 1
